@@ -1,6 +1,11 @@
 import pytest
 from lib.present import *
 
+def test_present_contents():
+    present = Present()
+    result = present.contents
+    assert result == None
+
 def test_present_wrap():
     present = Present()
     present.contents = "toys"
